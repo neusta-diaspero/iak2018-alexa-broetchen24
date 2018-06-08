@@ -1,0 +1,90 @@
+{
+  "INIT": {
+    "WELCOME": [
+      "Hallo.",
+      "Hi.",
+      "Grüß Dich.",
+      "Servus.",
+      "<say-as interpret-as='interjection'>willkommen.</say-as>",
+      "<say-as interpret-as='interjection'>hey.</say-as>",
+      "<say-as interpret-as='interjection'>moin.</say-as>"
+    ],
+    "ACTION": [
+      "Du kannst entweder Brötchen bestellen oder eine Bestellung prüfen. Was magst Du tun?"
+    ]
+  },
+  "START": {
+    "ACTION": [
+      "Du kannst entweder Brötchen bestellen oder eine Bestellung prüfen. Was magst Du tun?"
+    ],
+    "HELP": [
+      "Brötchen 24 liefert Dir frische Brötchen frei Haus. Bestelle hierzu einfach und bequem Deine gewünschte Zusammenstellung am Vorabend bis spätestens 22:00 Uhr. Um eine Bestellung aufzugeben sage einfach: Ich möchte Brötchen bestellen."
+    ],
+    "UNHANDLED": [
+      "Leider habe ich Dich nicht richtig verstanden.",
+      "Das konnte ich leider nicht verstehen."
+    ]
+  },
+  "ORDER_MODE": {
+    "ORDER_INIT": [
+      "Nenne mir bitte ein beliebiges Brötchen und die Anzahl die Du bestellen magst."
+    ],
+    "ORDER_NEXT": [
+      "Was möchtest Du noch bestellen?",
+      "Was möchtest Du Deiner Bestellung noch hinzufügen?",
+      "Was darf es zusätzlich sein?",
+      "Was magst Du bestellen?"
+    ],
+    "PRODUCT_ADDED_TO_ORDER": [
+      "Notiert.",
+      "Ok.",
+      "Gut.",
+      "Ja, gern.",
+      "Fein.",
+      "Gern."
+    ],
+    "ASK_FOR_MORE": [
+      "Magst Du noch mehr bestellen?",
+      "Darf es noch etwas sein?",
+      "Gibt es noch etwas was Du bestellen magst?"
+    ],
+    "HELP": [
+      "In diesem Schritt kannst Du nacheinander Deine gewünschte Bestellung nennen. Sage zum Beispiel zwei Mohnbrötchen."
+    ],
+    "UNHANDLED": [
+      "Leider habe ich Dich nicht richtig verstanden.",
+      "Das konnte ich leider nicht verstehen."
+    ]
+  },
+  "ORDER_CHECKOUT": {
+    "ORDER_CONTAINS": [
+      "Deine Bestellung enthält ",
+      "In Deiner Bestellung sind "
+    ],
+    "ORDER_SUBMIT": [
+      "Möchtest Du die Bestellung verbindlich tätigen?",
+      "Möchtest Du diese Bestellung an Brötchen 24 verbindlich senden?"
+    ],
+    "ORDER_SUCCESS": [
+      "<say-as interpret-as='interjection'>bon appetit.</say-as>",
+      "<say-as interpret-as='interjection'>guten appetit.</say-as>",
+      "<say-as interpret-as='interjection'>lass es dir schmecken.</say-as>"
+    ],
+    "HELP": [
+      "Du musst nun entscheiden, ob Du Deine Bestellung verbindlich an Brötchen 24 übermitteln möchtest. "
+    ],
+    "UNHANDLED": [
+      "Leider habe ich Dich nicht richtig verstanden.",
+      "Das konnte ich leider nicht verstehen."
+    ]
+  },
+  "GENERAL": {
+    "GOODBYE": [
+      "<say-as interpret-as='interjection'>bis dann.</say-as>",
+      "<say-as interpret-as='interjection'>bis bald.</say-as>",
+      "<say-as interpret-as='interjection'>mach's gut.</say-as>",
+      "bis demnächst."
+    ]
+  }
+
+}

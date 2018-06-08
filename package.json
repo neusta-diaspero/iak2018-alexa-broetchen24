@@ -1,0 +1,10 @@
+{
+  "name": "iak2018-alexa-broetchen24",
+  "version": "1.0.0",
+  "description": "Sample files of Session 'Talking to Alexa' at IA Konferenz 2018. ",
+  "main": "src/index.js",
+  "author": "Claudio Diaspero",
+  "dependencies": {
+    "alexa-sdk": "^1.0.25"
+  }
+}

@@ -1,0 +1,9 @@
+LaunchRequest
+StartOrderIntent
+AMAZON.HelpIntent
+SelectProductIntent product=brötchen quantity=2
+SelectProductIntent product=brötchen quantity=3
+SelectProductIntent product=weltmeisterbrötchen
+ListCurrentOrderIntent
+AMAZON.NoIntent
+
