@@ -166,7 +166,11 @@ const handlers_ORDER_MODE = Alexa.CreateStateHandler(states.ORDER_MODE, {
             if(basketOutput.length > 0){
                 basketOutput += ' und ';
             }
-            basketOutput += orderItem.QUANTITY + ' ' + orderItem.PRODUCT;
+            let quantityOutput = orderItem.QUANTITY
+            if (quantityOutput == 1){
+                quantityOutput = 'ein';
+            }
+            basketOutput += quantityOutput + ' ' + orderItem.PRODUCT;
 
         });
 
@@ -225,7 +229,11 @@ const handlers_ORDER_CHECKOUT = Alexa.CreateStateHandler(states.ORDER_CHECKOUT, 
             if(basketOutput.length > 0){
                 basketOutput += ' und ';
             }
-            basketOutput += orderItem.QUANTITY + ' ' + orderItem.PRODUCT;
+            let quantityOutput = orderItem.QUANTITY
+            if (quantityOutput == 1){
+                quantityOutput = 'ein';
+            }
+            basketOutput += quantityOutput + ' ' + orderItem.PRODUCT;
 
         });
 
