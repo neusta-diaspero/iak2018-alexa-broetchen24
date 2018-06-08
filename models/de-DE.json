@@ -1,0 +1,303 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "brötchen vierundzwanzig backup",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "SelectProductIntent",
+          "slots": [
+            {
+              "name": "product",
+              "type": "BS_PRODUCTS"
+            },
+            {
+              "name": "quantity",
+              "type": "BS_QUANITITY"
+            }
+          ],
+          "samples": [
+            "bitte {quantity} {product}",
+            "{product} {quantity} mal",
+            "{quantity} mal {product}",
+            "{quantity} {product}",
+            "{product}"
+          ]
+        },
+        {
+          "name": "StartOrderIntent",
+          "slots": [
+            {
+              "name": "productSynonym",
+              "type": "BS_PRODUCT_SYNONYMS"
+            },
+            {
+              "name": "date",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "bestellen",
+            "ich möchte bestellen",
+            "{productSynonym} aussuchen",
+            "eine bestellung für den {date} aufgeben",
+            "eine {productSynonym} bestellung aufgeben",
+            "eine bestellung aufgeben",
+            "{productSynonym} für den {date} bestellen",
+            "für {date} {productSynonym} bestellen",
+            "ich möchte gern {productSynonym} bestellen"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "ListCurrentOrderIntent",
+          "slots": [
+            {
+              "name": "productSynonym",
+              "type": "BS_PRODUCT_SYNONYMS"
+            }
+          ],
+          "samples": [
+            "lies mir die bestellliste vor",
+            "nenne mir die bestellung",
+            "was ist schon auf der bestellliste",
+            "welche {productSynonym} habe ich schon bestellt",
+            "was habe ich schon bestellt",
+            "was ist in meiner bestellung",
+            "was ist bereits auf meiner bestellung"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "BS_PRODUCTS",
+          "values": [
+            {
+              "name": {
+                "value": "Milchbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Hörnchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Franzbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Laugencroissant"
+              }
+            },
+            {
+              "name": {
+                "value": "Laugenbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Schokoladencroissant",
+                "synonyms": [
+                  "Schoko Croissant"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Croissant"
+              }
+            },
+            {
+              "name": {
+                "value": "Roggenbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Dinkelbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Kürbisbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Weltmeisterbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Kümmelbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Käsebrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Sesambrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Mohnbrötchen"
+              }
+            },
+            {
+              "name": {
+                "value": "Brötchen",
+                "synonyms": [
+                  "Schrippe",
+                  "Semmel",
+                  "Rundstück"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "BS_QUANITITY",
+          "values": [
+            {
+              "id": "12",
+              "name": {
+                "value": "zwölf",
+                "synonyms": [
+                  "dutzend",
+                  "ein dutzend"
+                ]
+              }
+            },
+            {
+              "id": "11",
+              "name": {
+                "value": "elf"
+              }
+            },
+            {
+              "id": "10",
+              "name": {
+                "value": "zehn"
+              }
+            },
+            {
+              "id": "9",
+              "name": {
+                "value": "neun"
+              }
+            },
+            {
+              "id": "8",
+              "name": {
+                "value": "acht"
+              }
+            },
+            {
+              "id": "7",
+              "name": {
+                "value": "sieben"
+              }
+            },
+            {
+              "id": "6",
+              "name": {
+                "value": "sechs",
+                "synonyms": [
+                  "halbes dutzend"
+                ]
+              }
+            },
+            {
+              "id": "5",
+              "name": {
+                "value": "fünf"
+              }
+            },
+            {
+              "id": "4",
+              "name": {
+                "value": "vier"
+              }
+            },
+            {
+              "id": "3",
+              "name": {
+                "value": "drei"
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "zwei"
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "ein",
+                "synonyms": [
+                  "eins"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "BS_PRODUCT_SYNONYMS",
+          "values": [
+            {
+              "name": {
+                "value": "teigwaren"
+              }
+            },
+            {
+              "name": {
+                "value": "brot"
+              }
+            },
+            {
+              "name": {
+                "value": "backwaren"
+              }
+            },
+            {
+              "name": {
+                "value": "brötchen",
+                "synonyms": [
+                  "schrippen",
+                  "rundstücke",
+                  "semmeln"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
